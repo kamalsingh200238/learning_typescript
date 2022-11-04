@@ -6,6 +6,10 @@ const addString = (str1: string = "first", str2: string = "second"): string => {
   return `${str1} ${str2}`;
 };
 
+const promiseReturn = (url: string): Promise<string> => {
+  return Promise.resolve(`data from ${url}`);
+};
+
 console.log("this is the add function", add(100, 16, 17));
 console.log("this is the add function", add());
 console.log("this is the addString function==>", addString("kamal", "singh"));
