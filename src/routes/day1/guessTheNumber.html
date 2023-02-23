@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1>Number guessing game</h1>
+    <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you
+      if your guess was too high or too low.</p>
+      <form>
+        <label for="number-input">Enter a guess</label>
+        <input id="number-input" type="number" min="0" max="10">
+        <button type="submit">Sumbit the guess</button>
+      </form>
+  </div>
+  <script type="module" src="/src/routes/day1/guessTheNumber.ts"></script>
+</body>
+
+</html>
