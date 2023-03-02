@@ -34,8 +34,7 @@ document.getElementById("number-form")?.addEventListener("submit", (event) => {
 
   // check the if guess <
   if (guess === answer) {
-    displayMessage("Congrats you won. And a new game has been started")
-    resetTheGame()
+    resetTheGame("Congrats You won the game. And a new game has been started for you.")
 
   } else if (guess > answer) {// check the if guess > answer
     displayMessage("your guess is higher than the answer")
